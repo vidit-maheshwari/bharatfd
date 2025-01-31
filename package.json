@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Multilingual FAQ Management System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "google-translate-api": "^2.3.0",
+    "mongoose": "^8.9.5",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "eslint": "^9.19.0",
+    "eslint-plugin-mocha": "^10.5.0",
+    "mocha": "^11.1.0",
+    "nodemon": "^3.1.9",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0"
+  }
+}

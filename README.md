@@ -2,6 +2,25 @@
 
 A robust Node.js backend for the Multilingual FAQ Management System. This service provides RESTful APIs for managing FAQs with support for multiple languages using Google Translate.
 
+## 📁 Project Structure
+
+```
+backend/
+├── config/           # Configuration files
+├── controllers/      # Request handlers
+├── models/          # Database models
+├── routes/          # API routes
+├── services/        # Business logic
+├── tests/           # Test files
+├── .env             # Environment variables
+├── .env.example     # Example environment variables
+├── .eslintrc        # ESLint configuration
+├── app.js           # Application entry point
+└── package.json     # Project metadata and dependencies
+```
+
+
+
 ## 🚀 Features
 
 - RESTful API endpoints for FAQ management (CRUD operations)
@@ -27,13 +46,13 @@ A robust Node.js backend for the Multilingual FAQ Management System. This servic
 - Node.js (v18 or higher)
 - MongoDB
 - Redis Server
-- npm or yarn
+- npm 
 
 ## 🔧 Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vidit-maheshwari/bharatfd
    cd backend
    ```
 
@@ -42,14 +61,6 @@ A robust Node.js backend for the Multilingual FAQ Management System. This servic
    npm install
    ```
 
-3. Create a `.env` file in the root directory:
-   ```env
-REDIS_PASSWORD = 
-REDIS_USER = 
-REDIS_HOST = 
-REDIS_PORT = 
-MONGO_URI = 
-   ```
 
 ## 🚀 Running the Application
 
@@ -82,6 +93,9 @@ npm run lint:fix   # Fix linting issues
 - **GET** `/api/faqs`
 - Returns a list of all FAQs
 
+- **GET** `/api/faqs?lang=hi`
+- Returns a list of all FAQs in hindi
+
 #### Create a new FAQ
 - **POST** `/api/faqs`
 - Creates a new FAQ
@@ -100,21 +114,4 @@ npm run lint:fix   # Fix linting issues
 #### REDIS_HOST = 
 #### REDIS_PORT = 
 #### MONGO_URI = 
-
-## 📁 Project Structure
-
-```
-backend/
-├── config/           # Configuration files
-├── controllers/      # Request handlers
-├── models/          # Database models
-├── routes/          # API routes
-├── services/        # Business logic
-├── tests/           # Test files
-├── .env             # Environment variables
-├── .env.example     # Example environment variables
-├── .eslintrc        # ESLint configuration
-├── app.js           # Application entry point
-└── package.json     # Project metadata and dependencies
-```
 
